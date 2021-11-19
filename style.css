@@ -113,7 +113,7 @@ input::placeholder{
     /* overflow: hidden; */
     position: relative;
     /* margin-bottom: 15px; */
-    animation: scrolling 40s linear infinite alternate;
+    animation: scrolling 45s linear infinite alternate;
     border-radius: 8px;
     /* border: 2px solid red; */
 }
