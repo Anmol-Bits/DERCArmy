@@ -5,7 +5,6 @@ body {
 }
 
 
-
 .container {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -15,7 +14,7 @@ body {
 .aside1 {
     /* border:2px solid white; */
     color: rgb(255, 255, 255);
-    height: 98vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: fixed;
@@ -26,7 +25,7 @@ body {
 
 .left-side-column {
     overflow: hidden;
-    height: 87vh;
+    height: 100vh;
     position: relative;
     top: 84px;
 
@@ -35,7 +34,7 @@ body {
 
 .right-side-column {
     overflow: hidden;
-    height: 98vh;
+    height: 115vh;
 
 }
 
@@ -66,7 +65,7 @@ body {
     display: flex;
     list-style-type: none;
     color: tomato;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 .navbar ul li a {
@@ -83,7 +82,6 @@ body {
 
 .heading h1 {
     text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .select input,
@@ -135,7 +133,7 @@ input::placeholder {
 
     100% {
         /* transform:translateY(-1000px); */
-        top: -1000%;
+        top: -900%;
     }
 }
 
@@ -155,8 +153,6 @@ input::placeholder {
     box-shadow: 0 0 10px black;
     /* border: 1px solid rgb(89, 89, 89); */
 }
-
-
 
 
 /* table */
@@ -195,7 +191,7 @@ input::placeholder {
     overflow: hidden;
     position: relative;
     border: 2px solid black;
-    color: rgb(197, 189, 189);
+    color: #a09f9f;
     background-color: #3e3838;
     width: 100%;
 }
@@ -312,9 +308,8 @@ button {
     margin: 3px;
 }
 
+
 /* white shadow */
-
-
 
 
 .white-shadow {
@@ -324,15 +319,12 @@ button {
     background-color: #3e3838;
     height: 72px;
     border-radius: 6px;
-    COLOR: rgb(197, 189, 189);
-    z-index: 5;
-    TEXT-ALIGN: center;
+    COLOR: white;
+    z-index: 50;
+    text-align: center;
     right: 0px;
     box-shadow: 0px 38px 25px #3e3838;
 }
-
-
-
 
 /* dropdown btn */
 
@@ -389,65 +381,8 @@ button {
     display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-/* .dropdown:hover .dropbtn {
-background-color: #3e8e41;
-} */
+/* dropdown end */
 
-
-
-
-/* 1.css */
-
-
-.popup-container {
-    border-radius: 12px;
-    height: 75vh;
-    background-color: darkgray;
-    position: absolute;
-    bottom: 11vh;
-    width: 35%;
-    right: 12%;
-    z-index: 1;
-    opacity: 0;
-    top: -200%;
-    transform: translate(-50%, -50%) scale(0.5);
-    /* transition: opacity 300ms ease-in-out,
-                top 1000ms ease-in-out,
-                transform 1000ms ease-in-out; */
-}
-
-.popup-container.active {
-    opacity: 1;
-    top: 35%;
-    transform: translate(-3%, -25%) scale(1);
-    transition: transform 600ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
-
-}
-
-
-
-.popup-heading {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 15px;
-}
-
-.popup-heading h2 {
-    padding: 0px 45px;
-}
-
-.popup-heading button {
-    width: 30px;
-    height: 30px;
-}
-
-.popup-box {
-    width: 100%;
-    /* border: 2px solid rgb(7, 7, 7); */
-}
 
 .filters {
     display: flex;
@@ -578,7 +513,7 @@ background-color: #3e8e41;
 
         .logo a img {
             width: 80px;
-            height: 90px;
+            height: 81px;
             border-radius: 50%;
         }
 
@@ -667,6 +602,13 @@ background-color: #3e8e41;
                 text-align: center;
                 font-size: 25px;
             }
+
+            .logo a img {
+                width: 75px;
+                height: 76px;
+                border-radius: 50%;
+                margin-right: 4px;
+            }
         }
 
 
@@ -683,7 +625,7 @@ background-color: #3e8e41;
 
             .logo a img {
                 width: 75px;
-                height: 85px;
+                height: 76px;
                 border-radius: 50%;
                 margin-right: 4px;
             }
@@ -692,3 +634,189 @@ background-color: #3e8e41;
                 margin: 20px 0px;
             }
         }
+
+
+        @media screen and (min-height: 1024) {
+            #example {
+                width: 100%;
+                height: 67vh !important;
+            }
+
+            .dataTables_wrapper .dataTables_scroll {
+                clear: both;
+                height: 70vh !important;
+            }
+
+            .dataTables_scrollBody {
+                position: relative;
+                overflow: auto;
+                width: 100%;
+                max-height: 73vh !important;
+                height: 67vh !important;
+            }
+        }
+
+
+    }
+
+}
+
+@media screen and (min-height: 762px) {
+
+    /* body {
+              background-color: rgb(18, 18, 230);
+            } */
+    #example {
+        width: 100%;
+        height: 57vh !important;
+    }
+
+    .dataTables_wrapper .dataTables_scroll {
+        clear: both;
+        height: 53vh !important;
+    }
+
+    .dataTables_scrollBody {
+        position: relative;
+        overflow: auto;
+        width: 100%;
+        max-height: 73vh !important;
+        height: 48vh !important;
+    }
+}
+
+@media screen and (min-height: 940px) {
+
+    /* body {
+              background-color: rgb(18, 18, 230);
+            } */
+    #example {
+        width: 100%;
+        height: 57vh !important;
+    }
+
+    .dataTables_wrapper .dataTables_scroll {
+        clear: both;
+        height: 58vh !important;
+    }
+
+    .dataTables_scrollBody {
+        position: relative;
+        overflow: auto;
+        width: 100%;
+        max-height: 73vh !important;
+        height: 54vh !important;
+    }
+
+    .sliding-images {
+        height: 22vh;
+    }
+
+    .sliding-images img {
+        height: 23vh;
+    }
+
+    @keyframes scrolling {
+
+        0% {
+            /* transform:translateY(0px); */
+            top: 0%;
+        }
+
+        100% {
+            /* transform:translateY(-1000px); */
+            top: -450%;
+        }
+    }
+
+    @media screen and (min-height: 1024px) {
+
+        #example {
+            width: 100%;
+            height: 57vh !important;
+        }
+
+        .dataTables_wrapper .dataTables_scroll {
+            clear: both;
+            height: 62vh !important;
+        }
+
+        .dataTables_scrollBody {
+            position: relative;
+            overflow: auto;
+            width: 100%;
+            max-height: 73vh !important;
+            height: 57vh !important;
+        }
+
+        .sliding-images {
+            height: 22vh;
+        }
+
+        .sliding-images img {
+            height: 23vh;
+        }
+
+    }
+
+    @media screen and (min-height: 1170px) {
+
+        #example {
+            width: 100%;
+            height: 62vh !important;
+        }
+
+        .dataTables_wrapper .dataTables_scroll {
+            clear: both;
+            height: 66vh !important;
+        }
+
+        .dataTables_scrollBody {
+            position: relative;
+            overflow: auto;
+            width: 100%;
+            max-height: 73vh !important;
+            height: 61vh !important;
+        }
+
+        .sliding-images {
+            height: 21vh;
+        }
+
+        .sliding-images img {
+            height: 21vh;
+        }
+
+    }
+
+    @media screen and (min-height: 1257px) {
+
+        #example {
+            width: 100%;
+            height: 66vh !important;
+        }
+
+        .dataTables_wrapper .dataTables_scroll {
+            clear: both;
+            height: 69vh !important;
+        }
+
+        .dataTables_scrollBody {
+            position: relative;
+            overflow: auto;
+            width: 100%;
+            max-height: 73vh !important;
+            height: 64vh !important;
+        }
+
+        .sliding-images {
+            height: 21vh;
+        }
+
+        .sliding-images img {
+            height: 21vh;
+        }
+
+    }
+
+}
